@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mona Essaid Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+    <!-- -------- Header -------- -->
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo8.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#">Resume</a></li> -->
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <!-- <p>Full Stack Software Developer</p> -->
+                <h1>Hi, I'm <span>Mona Essaid</span>.<br>
+                    I'm a software developer from Los Angeles.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------- About -------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p class="about-text">
+                        <br>
+                        My name is Mona Essaid and I am a full-stack developer from Los Angeles, CA. I am a recent
+                        graduate with a master’s degree in Software Development from the University of Glasgow in
+                        Scotland. But my undergraduate degree was not in tech - I love telling stories and solving
+                        problems creatively, so I chose to study marketing during my bachelors degree. I decided that I
+                        wanted to pursue a career in tech during the last semester of my undergraduate degree. I took a
+                        user experience design course and loved the combination of creative problem solving, psychology,
+                        and technical challenges that it offered.
+                        <br><br>
+                        After I graduated, I worked in a variety of fields with the goal of continuing to learn more
+                        about technology in my free time so I could eventually transition into more technical roles. I
+                        was able to learn more about front-end web development through the Grow with Google Scholarship
+                        that I received in 2018, and I independently studied Java and JavaScript over the years as well.
+                        I decided to go back to school to formally study software development and gain the skills I
+                        needed to change my career in 2022. I loved living and studying in a different environment, and
+                        being immersed in another culture gave me valuable perspective.
+                        <br><br>
+                        Since I came back to the US in early 2024, I have been working on personal projects,
+                        earning certifications, and fine-tuning my master’s thesis project with the goal of releasing it
+                        in early 2025. I joined the Cook Systems FastTrack program in November 2024. During the program,
+                        I have completed backend projects in Java, SpringBoot, and Node, and frontend projects with
+                        html, CSS,
+                        JavaScript, and Angular. I look forward to continuing to refine my technical skills and
+                        continuing my career in software development with Cook Systems.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------- Portfolio -------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">Projects</h1>
+            <div class="project-list">
+                <div class="work">
+                    <img src="images/project1.png">
+                    <div class="layer">
+                        <h2>Twitter API</h2>
+                        <p> Implemented a RESTful API for Twitter using Spring Boot, JPA,
+                            and Postgresql in a team of 3. Wrote Spring services and controllers that handle requests,
+                            perform validation and business logic, and transform data between the API and database
+                            models.</p>
+                        <a href="https://github.com/fasttrackd-student-work/spring-assessment-social-media-nov-2024-team-2"
+                            id="github-link" target="_blank">
+                            <h3>GitHub</h3></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/project2.png">
+                    <div class="layer">
+                        <h2>Quizler CLI</h2>
+                        <p> Created a custom library with Javascript, inquirer.js, and vorpal.jsfor a command line
+                            application. It builds quizzes and allows the user to take quizzes they have built or pull
+                            random questions from multiple quizzes to take a random quiz.</p>
+                        <a href="https://github.com/fasttrackd-student-work/js-assignment-quizler-monaessaid"
+                            id="github-link" target="_blank">
+                            <h3>GitHub</h3></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/project3.png">
+                    <div class="layer">
+                        <h2>Workspace WebApp</h2>
+                        <p> Built a web application that helps remote workers find great places to work wherever they
+                            are in the world.
+                            It consists of a server built with Node.js that communicates with 3 Google APIs
+                            (Autocomplete, Maps, and Places) and a client made with React.
+                        </p>
+                        <a href="https://monaessaid.github.io/Portfolio/project-description.html" id="github-link"
+                            target="_blank">
+                            <h3>More Info</h3></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------- Contact -------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="contact">
+
+                <h1 class="subtitle">Contact Me</h1>
+
+                <h2 class="contact-subtitles">Resume</h2>
+                <h2><a href="images/resume.pdf" download class="button">Download Resume</a></h2>
+
+                <h2 class="contact-subtitles">GitHub</h2>
+                <div class="card" id="card">
+                    <div class="avatar">
+                        <img src="images/github-button.png">
+                    </div>
+                    <div class="info">
+                        <h2>Profile Name</h2>
+                        <p>Profile Bio</p>
+                        <a href="https://github.com/monaessaid" id="visit-github" target="blank"><h3>Visit GitHub Profile</h3></a>
+                        <br>
+                        <button class="submit-button" id="github-submit">Reveal!</button>
+                    </div>
+                </div>
+
+                <h2 class="contact-subtitles">Email</h2>
+
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="c129bdf7-74fe-4cb7-86c5-fec46231903b">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" rows="6" placeholder="Message" required></textarea>
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

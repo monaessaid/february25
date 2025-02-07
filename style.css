@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+ /* -------- Header --------  */
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    margin-top: 20px;
+    width: 400px;
+    /* height: 50px; */
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    /* background: #58644f; */
+    background: #abc68c;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: #abc68c;
+    /* color: #b8003ad6; */
+    /* color: #657653; */
+    /* color: #ff79b7; */
+    /* color: #d0523f; */
+}
+
+ /* -------- About --------  */
+
+ #about {
+    /* font-size: 30px; */
+    padding-top: 80px;
+    /* color: #ff8484; */
+ }
+
+ .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+
+ .about-col-1 {
+    flex-basis: 35%;
+ }
+
+ .about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+ }
+
+ .about-col-2 {
+    flex-basis: 60%;
+ }
+
+ .subtitle {
+    font-size: 50px;
+    font-weight: 600;
+    color: #abc68c;
+ }
+
+ .about-text {
+    text-align: justify;
+    color: white;
+    font-size: 21.5px;
+ }
+
+  /* -------- Portfolio --------  */
+
+#portfolio {
+    padding: 50px 0;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    /* background: linear-gradient(#192312, hsla(0, 0%, 0%, 0.9), hsla(0, 0%, 100%, 0.51)); */
+    background: linear-gradient(hsla(0, 0%, 100%, 0.451),hsla(0, 0%, 0%, 0.9),#192312);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align:justify;
+    transition: height 0.5s;
+}
+
+.layer h2 {
+    margin-bottom: 20px;
+    color: #abc68c;
+}
+
+.layer h3:hover {
+    color: white;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+#github-link {
+    margin-top: 20px;
+    color: #abc68c;
+    text-decoration: none;
+}
+
+.button {
+    background-color: black; /* Green */
+    border: white solid;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.button:hover {
+    background-color: #d1f2aa;
+    color: #2d3326;
+}
+
+.contact form {
+    width: 100%;
+}
+
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.submit-button {
+    background-color: black; /* Green */
+    border: white solid;
+    color: white;
+    padding: 16px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.submit-button:hover {
+    background-color: #d1f2aa;
+    color: #2d3326;
+}
+
+.contact-subtitles {
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    padding: 20px 0;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 20px;
+}
+
+.avatar {
+    width: 250px;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: 50%;
+    outline: 5px solid white;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info * {
+    margin: 20px;
+}
+
+.info h2 {
+    padding-top: 20px;
+}
+
+#visit-github {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+#visit-github:hover {
+    color: #d1f2aa;
+}
