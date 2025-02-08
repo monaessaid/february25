@@ -6,21 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mona Essaid Portfolio</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Montserrat -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <!-- Plaster for Logo-->
+    <link href="https://fonts.googleapis.com/css2?family=Plaster&display=swap" rel="stylesheet">
+
     <script src="app.js" defer></script>
 </head>
 
 <body>
+
+    <!-- -------- Video Background -------- -->
+
+    <video autoplay muted loop id="videoBackground">
+        <source src="images/forest.mp4" type="video/mp4">
+    </video>
 
     <!-- -------- Header -------- -->
 
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/logo8.png" class="logo">
+                <!-- <img src="images/Vector.png" class="logo"> -->
+                <h2 id="logo">MONA</h2>
                 <ul>
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -32,7 +45,7 @@
             <div class="header-text">
                 <!-- <p>Full Stack Software Developer</p> -->
                 <h1>Hi, I'm <span>Mona Essaid</span>.<br>
-                    I'm a software developer from Los Angeles.</h1>
+                    I'm a software developer.</h1>
             </div>
         </div>
     </div>
@@ -43,7 +56,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/user.jpg">
+                    <img src="images/vector.png">
                 </div>
                 <div class="about-col-2">
                     <h1 class="subtitle">About Me</h1>
@@ -51,27 +64,11 @@
                         <br>
                         My name is Mona Essaid and I am a full-stack developer from Los Angeles, CA. I am a recent
                         graduate with a master’s degree in Software Development from the University of Glasgow in
-                        Scotland. But my undergraduate degree was not in tech - I love telling stories and solving
-                        problems creatively, so I chose to study marketing during my bachelors degree. I decided that I
-                        wanted to pursue a career in tech during the last semester of my undergraduate degree. I took a
-                        user experience design course and loved the combination of creative problem solving, psychology,
-                        and technical challenges that it offered.
-                        <br><br>
-                        After I graduated, I worked in a variety of fields with the goal of continuing to learn more
-                        about technology in my free time so I could eventually transition into more technical roles. I
-                        was able to learn more about front-end web development through the Grow with Google Scholarship
-                        that I received in 2018, and I independently studied Java and JavaScript over the years as well.
-                        I decided to go back to school to formally study software development and gain the skills I
-                        needed to change my career in 2022. I loved living and studying in a different environment, and
-                        being immersed in another culture gave me valuable perspective.
-                        <br><br>
-                        Since I came back to the US in early 2024, I have been working on personal projects,
+                        Scotland. Since my graduation, I have been working on personal projects,
                         earning certifications, and fine-tuning my master’s thesis project with the goal of releasing it
-                        in early 2025. I joined the Cook Systems FastTrack program in November 2024. During the program,
-                        I have completed backend projects in Java, SpringBoot, and Node, and frontend projects with
-                        html, CSS,
-                        JavaScript, and Angular. I look forward to continuing to refine my technical skills and
-                        continuing my career in software development with Cook Systems.
+                        in early 2025. I graduated from the Cook Systems FastTrack program in December 2024. During the program,
+                        I completed backend projects in Java, SpringBoot, and Node, and frontend projects with
+                        html, CSS, JavaScript, and Angular. I look forward to continuing my career in software development.
                     </p>
                 </div>
             </div>
@@ -155,7 +152,7 @@
                     </div>
                 </div>
 
-                <h2 class="contact-subtitles">Email</h2>
+                <h2 class="contact-subtitles">Email Me</h2>
 
                 <form action="https://api.web3forms.com/submit" method="POST">
                     <input type="hidden" name="access_key" value="c129bdf7-74fe-4cb7-86c5-fec46231903b">
